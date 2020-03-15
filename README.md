@@ -16,6 +16,8 @@ For this experiment, you will need to install two extensions to Jupyter. Follow 
 
 Navigate to [notetaker](https://github.com/yifanwu/notetaker) and [midas](https://github.com/yifanwu/midas) and respectively, download the projects  as zip, then follow the README there for instructions.
 
+To participate, please boot up a `jupyter notebook` in your terminal. Please use Chrome for the experiment as the other Browsers are not tested.
+
 ## Submission
 
 At the end of the session, you should zip up this directory and then email Yifan as attachment. She will then send you the Amazon gift card electronically.
