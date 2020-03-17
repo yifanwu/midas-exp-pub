@@ -6,17 +6,35 @@ You can find the consent form under the title `consent.pdf` in this directory.
 
 ## Requirements
 
-You should have a Python 3.x environment, and Jupyter lab installed on your computer.
+**Skills**: you should know how to do data analysis, and basic modeling/"machine learning".  Specifically, you should already be familiar with dataframes (e.g., `pandas`), know how to read basic visualizations (e.g., bar chart, scatter plot), and know how to build a classification algorithm (e.g., `LogisticRegression` from `sklearn.linear_model`).
+
+**Technical**: you should have **Python 3.7, Jupyter**, and **Chrome** installed on your computer.
 
 ## Setup
 
 First, download a zip of this repository, which contains the data and relevant notebooks.
 
-For this experiment, you will need to install two extensions to Jupyter. Follow the following steps:
+For this experiment, you will need to install two extensions to Jupyter. Follow the steps:
 
-Navigate to [notetaker](https://github.com/yifanwu/notetaker) and [midas](https://github.com/yifanwu/midas) and respectively, download the projects  as zip, then follow the README there for instructions.
+* `mkdir midas-exp && cd midas-exp`
+* `git clone git@github.com:yifanwu/midas-exp-pub.git`
+* `git clone git@github.com:yifanwu/notetaker.git`
+  * `cd notetaker`
+  * `jupyter nbextension install notetaker --user`
+  * `jupyter nbextension enable notetaker/main`
+  * `cd ..`
+* `git clone git@github.com:yifanwu/midas.git`
+  * `cd midas`
+  * `pip install -r requirements.txt`
+  * `python setup.py develop`
+  * `jupyter nbextension install --py --symlink midas`
+  * `cd ../midas-exp-pub`
+* `jupyter notebook`, then with Chrome open `http://localhost:8888/`
 
-To participate, please boot up a `jupyter notebook` in your terminal. Please use Chrome for the experiment as the other Browsers are not tested.
+At the end of the experiment, please do the follow
+
+* `zip -r midas-exp-pub.zip midas-exp-pub`
+* `jupyter nbextension uninstall notetaker --user`
 
 ## Submission
 
@@ -37,3 +55,5 @@ The dataset `fires.csv` is sampled from this [kaggle data set](https://www.kaggl
 The dataset `berkeley_faculty.csv` is taken from [the Daily Cal](https://github.com/dailycal-projects/ucb-faculty-salary).
 
 The dataset `recent_grads.csv` is taken from [fivethirtyeight](https://github.com/fivethirtyeight/data/tree/master/college-majors).
+
+The loans dataset is referenced from [kaggle](https://www.kaggle.com/c/home-credit-default-risk/data).
