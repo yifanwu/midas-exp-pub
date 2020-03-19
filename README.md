@@ -28,6 +28,7 @@ For this experiment, you will need to install two extensions to Jupyter. Follow 
   * `pip install -r requirements.txt`
   * `python setup.py develop`
   * `jupyter nbextension install --py --symlink midas`
+  * `jupyter nbextension enable midas/index`
   * `cd ../midas-exp-pub`
 * `jupyter notebook`, then with Chrome open `http://localhost:8888/`
 
