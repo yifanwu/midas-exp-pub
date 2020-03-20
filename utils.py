@@ -15,13 +15,14 @@ setup_sql = """create table survey (
                   unique(qid, pid) 
                )"""
 # all Likert Scales
-# AGREE_OPTIONS = ['Strongly Agree', 'Agree', 'Undecided', 'Disagree', 'Strongly Disagree']
-BINARY_OPTIONS = ['Yes', 'No']
+AGREE_OPTIONS = ['Strongly Agree', 'Agree', 'Undecided', 'Disagree', 'Strongly Disagree']
+# BINARY_OPTIONS = ['Yes', 'No']
+# EASY_OPTIONS = ['Very Easy', 'Easy', 'Eas']
+LIKELIHOOD = ['Definitely', 'Probably', 'Possibly', 'Probably Not', 'Definitely Not']
 TIME_OPTIONS = ['Always', 'Often', 'Sometimes', 'Rarely', 'Never']
 
 def get_options(adjective):
-    return [f'Very {adjective}', f'{adjective}', f'Moderately {adjective}', f'Slightly {adjective}', f'Not {adjective}',]
-
+    return [f'Extremely {adjective}', f'Very {adjective}', f'Somewhat {adjective}', f'Not so {adjective}', f'Not at all {adjective}']
 
     
 def get_comment(description):
