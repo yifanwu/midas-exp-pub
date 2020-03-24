@@ -35,26 +35,12 @@ For this experiment, you will need to install two extensions to Jupyter. Follow 
 At the end of the experiment, please do the follow
 
 * `zip -r midas-exp-pub.zip midas-exp-pub`
-* `jupyter nbextension uninstall notetaker --user`
+* `jupyter nbextension uninstall notetaker --user` (If you have successfully removed this extension, you will not see the 🧽 and ⏸ buttons in the menubar.)
 
-## Submission
+## Data Source Credit
 
-At the end of the session, you should zip up this directory and then email Yifan as attachment. She will then send you the Amazon gift card electronically.
-
-## Clean Up
-
-Note that you should be sure to remove the `notetaker` extension with the following:
-
-`jupyter nbextension uninstall notetaker`
-
-If you have successfully removed this extension, you will not see the 🧽 and ⏸ buttons in the menubar.
-
-## Credit
-
-The dataset `fires.csv` is sampled from this [kaggle data set](https://www.kaggle.com/rtatman/188-million-us-wildfires).
-
-The dataset `berkeley_faculty.csv` is taken from [the Daily Cal](https://github.com/dailycal-projects/ucb-faculty-salary).
-
-The dataset `recent_grads.csv` is taken from [fivethirtyeight](https://github.com/fivethirtyeight/data/tree/master/college-majors).
-
-The loans dataset is referenced from [kaggle](https://www.kaggle.com/c/home-credit-default-risk/data).
+* The dataset `fires.csv` is sampled from this [kaggle data set](https://www.kaggle.com/rtatman/188-million-us-wildfires).
+* The dataset `berkeley_faculty.csv` is taken from [the Daily Cal](https://github.com/dailycal-projects/ucb-faculty-salary).
+* The dataset `recent_grads.csv` is taken from [fivethirtyeight](https://github.com/fivethirtyeight/data/tree/master/college-majors).
+* The loans dataset is referenced from [kaggle](https://www.kaggle.com/c/home-credit-default-risk/data).
+* The cars dataset is referenced from [kaggle](https://www.kaggle.com/austinreese/craigslist-carstrucks-data).
