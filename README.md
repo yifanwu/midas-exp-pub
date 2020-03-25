@@ -17,7 +17,7 @@ First, download a zip of this repository, which contains the data and relevant n
 For this experiment, you will need to install two extensions to Jupyter. Follow the steps:
 
 * `mkdir midas-exp && cd midas-exp`
-* if you are doing the modeling version, please do `git clone git@github.com:yifanwu/midas-exp-pub.git`, and if you are doing the analysis version, please do `git clone --branch v1-EDA git@github.com:yifanwu/midas-exp-pub.git`
+* `git clone git@github.com:yifanwu/midas-exp-pub.git`
 * `git clone git@github.com:yifanwu/notetaker.git`
   * `cd notetaker`
   * `jupyter nbextension install notetaker --user`
@@ -36,6 +36,13 @@ At the end of the experiment, please do the follow
 
 * `zip -r midas-exp-pub.zip midas-exp-pub`
 * `jupyter nbextension uninstall notetaker --user` (If you have successfully removed this extension, you will not see the 🧽 and ⏸ buttons in the menubar.)
+
+## Setup with Virtual Env
+
+Run the following **before** we start the installation process. Note that you might also need to install other tools like Jupyter.
+
+* `python3 -m venv midas-env`
+* `source midas-env/bin/activate`
 
 ## Data Source Credit
 
