@@ -12,37 +12,9 @@ You can find the consent form under the title `consent.pdf` in this directory.
 
 ## Setup
 
-First, download a zip of this repository, which contains the data and relevant notebooks.
+There will be no setup if you are participating with Yifan for the study---a link to a cloud hosted Jupyter notebook instance will be sent to you.
 
-For this experiment, you will need to install two extensions to Jupyter. Follow the steps:
-
-* `mkdir midas-exp && cd midas-exp`
-* `git clone git@github.com:yifanwu/midas-exp-pub.git`
-* `git clone git@github.com:yifanwu/notetaker.git`
-  * `cd notetaker`
-  * `jupyter nbextension install notetaker --user`
-  * `jupyter nbextension enable notetaker/main`
-  * `cd ..`
-* `git clone git@github.com:yifanwu/midas.git`
-  * `cd midas`
-  * `pip install -r requirements.txt`
-  * `python setup.py develop`
-  * `jupyter nbextension install --py --symlink midas`
-  * `jupyter nbextension enable midas/index`
-  * `cd ../midas-exp-pub`
-* `jupyter notebook`, then with Chrome open `http://localhost:8888/`
-
-At the end of the experiment, please do the follow
-
-* `zip -r midas-exp-pub.zip midas-exp-pub`
-* `jupyter nbextension uninstall notetaker --user` (If you have successfully removed this extension, you will not see the 🧽 and ⏸ buttons in the menubar.)
-
-## Setup with Virtual Env
-
-Run the following **before** we start the installation process. Note that you might also need to install other tools like Jupyter.
-
-* `python3 -m venv midas-env`
-* `source midas-env/bin/activate`
+If you are trying this out your self, make sure that you have [midas](https://github.com/yifanwu/midas) installed.
 
 ## Data Source Credit
 
